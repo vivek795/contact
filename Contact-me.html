@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+    <h1>My Contact Details</h1>
+    <p>Phone no. = 14537399733</p>
+    <p>Email - contact@gmail.com</p>
+    <hr>
+    <h3>Enter Details</h3>
+
+    <!--form element has main parts : 
+                1. label (which specifies what is that input field is about)
+                2. input (to take input from the user). -->
+
+    <form action="mailto: abcd@gmail.com" method="post" enctype="text/plain">    
+        <!-- action attribute of the form element specifies the action that the form needs to perform when the submit button is pressed.
+            here,"mailto: email address" is telling the form to mail all the entered details to the specified email address.
+        method attribute specifies how we have to send the details , 
+            ex- "post" means directly transfer(post) all the details what the user types into these input fields
+            in the default email client of the pc(windows mail).
+        enctype (encoding type) : this attribute tells that the data in our form is encoded in plain text.-->
+        
+        <label for="">Name : </label>
+        <input type="text" name="Your Name" value=""><br>    <!--to take text input corresponding to Name label 
+            and to store as the "Your Name" specified by the name attribute, 
+            so as at time of displaying details the entered detail is shown corresponding to this name.-->
+
+        <label for="">Email : </label>
+        <input type="email" name="Your Email" id=""><br>
+        <label for="">Password : </label>
+        <input type="password" name="Your Password" value=""><br>
+        <label>Your Message: </label><br>
+        <textarea name="Your Message" id="" cols="30" rows="10"></textarea>      <!-- to get a text area of default size (rows ans cols) 
+                                                                                        which can be modified later.-->
+        <input type="submit" name="" id="">         <!-- to get a submit button to perform the action of the form.-->
+    </form>
+</body>
+</html>
